@@ -1,0 +1,43 @@
+{
+  "name": "nft-python-statistcal-rarity-ranking-algorithm",
+  "version": "1.0.0",
+  "description": "Typescript conversion of metasniffer",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node -r source-map-support/register dist/index",
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "test": "jest --detectOpenHandles --verbose",
+    "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet",
+    "cleanup": "rm -rf dist",
+    "update": "git pull && yarn build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:stevohuncho/nft-python-statistcal-rarity-ranking-algorithm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevohuncho/nft-python-statistcal-rarity-ranking-algorithm"
+  },
+  "homepage": "https://github.com/stevohuncho/nft-python-statistcal-rarity-ranking-algorithm#readme",
+  "devDependencies": {
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "@aetherio/opensea-js": "^1.0.1",
+    "@aws-sdk/client-dynamodb": "^3.55.0",
+    "csv-parse": "^5.0.4",
+    "express": "^4.17.3",
+    "got": "^11.8.3",
+    "hpagent": "^0.1.2",
+    "ipfs": "^0.62.1",
+    "ipfs-core": "^0.14.1",
+    "python-shell": "^3.0.1",
+    "toml": "^3.0.0",
+    "ts-node-dev": "^1.1.8",
+    "web3": "^1.7.3"
+  }
+}
